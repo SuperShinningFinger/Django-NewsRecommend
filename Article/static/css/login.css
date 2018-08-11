@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 12px;
+    min-width: 900px;
+    font-family: '微软雅黑';
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 3px 1px rgba(32, 127, 179, 0.4);
+    outline: 0 none;
+}
+
+/******************************* 其他样式 *******************************/
+/*错误提示*/
+.err {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    font-size: 12px;
+    width: 100%;
+    color: red;
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+
+.err img {
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.err-top40 {
+    top: 40px;
+}
+
+.err-top20 {
+    top: 20px;
+}
+
+.err-top160 {
+    top: 160px;
+}
+
+.err-top90 {
+    top: 90px;
+}
+
+/*上传*/
+#reg_info_file_base64 {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+}
+
+/*登录*/
+.login-box-cen {
+    width: 240px;
+    border: 1px solid #cccccc;
+    margin: 0px auto 0px;
+    height: 318px;
+    border-radius: 10px;
+    padding: 0 64px;
+    background: #fff;
+}
+
+.login-box-cen-ti {
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    color: #222222;
+    font-size: 16px
+}
+
+.login-box-cen-form {
+    position: relative;
+}
+
+.login-box-cen-form-input {
+    float: left;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.login-box-cen-form-button {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background: #cc0000;
+    cursor: pointer;
+}
+
+.login-box-cen-form-ot {
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.login-box-cen-form-ot span {
+    color: #999999;
+}
+
+.login-box-cen-form-ot a {
+    color: #cc0000;
+}
+
+.w218 {
+    width: 218px;
+}
+
+.w238 {
+    width: 238px;
+}
+
+.mar-bottom10 {
+    margin-bottom: 10px;
+}
+
+.w358 {
+    width: 358px;
+}
+
+.w228 {
+    width: 228px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.w380 {
+    width: 380px;
+}
+
+.w278 {
+    width: 278px;
+}
+
+.h88 {
+    height: 88px;
+}
+
+.mar-top50 {
+    margin-top: 50px;
+}
+
+.mar-left10 {
+    margin-left: 10px;
+}
+
+.mar-bottom20 {
+    margin-bottom: 20px;
+}
+
+.bitian {
+    color: #dc2b2b;
+}

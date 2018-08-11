@@ -1,0 +1,45 @@
+{% extends 'master.html' %}
+{% load space2nbsp %}
+{% load static %}
+{% block content %}
+    <link href="{% static "css/news.css" %}" rel="stylesheet" type="text/css" media="all" />
+    <!-- 头部开始 -->
+    <div class="container">
+       <div class="weizhi"><strong class="red">当前位置:</strong> 首页 - 新闻中心</div>
+       <div class="w655 left">
+
+          <!-- 新闻详细内容开始 -->
+          <div class="s_tt">{{ news.title }}</div>
+          <div class="s_xx">时间：{{ news.date }}&nbsp;&nbsp;作者：{{ news.author }}浏览：20次  </div>
+          <div class="s_nr"> {{ news.text|entertobr|spacetonbsp }}</div>
+           <div class="label" >
+            <span style="font-style:oblique">标签：</span><span style="font-size: small;font-style: italic;le: italic;">{{ news.type }}</span>
+           </div>
+          <!-- 新闻详细内容结束 -->
+
+       </div>
+       <div class="w330 right">
+        <!-- 推荐新闻 开始 -->
+        <h3 class="tjhc_t"><strong class="f18 hei">热门新闻</strong></h3>
+        <div class="k10"></div>
+        <ul class="nypaihang f14">
+          <li><a href="#">新闻标题</a></li>
+
+        </ul>
+        <div class="clear"></div>
+        <!-- 推荐新闻 结束 -->
+        <div class="k10"></div>
+        <!-- 热门文章 开始 -->
+        <h3 class="tjhc_t"><strong class="f18 hei">热门新闻</strong></h3>
+        <div class="k10"></div>
+        <ul class="nypaihang f14">
+          <li><a href="#">新闻标题</a></li>
+
+        </ul>
+     </div>
+     <div class="clear"></div>
+     <!-- 热门文章 结束 -->
+       </div>
+       <div class="clear"></div>
+    </div>
+{% endblock %}

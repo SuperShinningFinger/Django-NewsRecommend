@@ -1,0 +1,43 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+    <link href="{% static "css/search.css" %}" rel="stylesheet" type="text/css" media="all" />
+    <div class="back">
+    {% if SearchStatus == 'Error' %}
+        <div  class="well fade in daytips" style="color:#000000;text-align: center;margin:1% auto">
+            <strong>嘻嘻,并没有关于<b>"{{ keyword }}"</b>的内容,请换一个词试试</strong>
+        </div>
+
+    {% endif %}
+    {% if SearchStatus == 'Success' %}
+        <div class="well fade in daytips" style="color: #000000;text-align: center;margin:1% auto">
+            <strong>关于<b>"{{ keyword }}"</b>的搜索结果一共有<b>"{{ ResultAmount }}"</b>条</strong>
+        </div>
+        <div class="main">
+        <ul>
+            {% for article in SearchResult %}
+                <li class="title">
+                <article class="excerpt excerpt-first">
+                    <div class="titleright">
+                        <b><a class="gotoArchive" href="{% url 'newsrecommand:news' article.id %}" title="{{ article.title }}">{{ article.title }}</a></b>
+                    </div>
+                    <div class="titleleft">
+                        <span class="date">{{ article.date }}</span>
+                    </div>
+                </article>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="ui small pagination menu">
+        {% if SearchResult.has_previous %}
+            <a  href="?searchtext={{ keyword }}&searchsubmit=搜索&page={{ SearchResult.previous_page_number }}"> &lt;&lt;上一页 </a>
+        {% endif %}
+              <b>当前第{{ SearchResult.number }} 页</b>&nbsp;&nbsp; -共{{ SearchResult.paginator.num_pages }}页-
+            {% if SearchResult.has_next %}
+            <a href="?searchtext={{ keyword }}&searchsubmit=搜索&page={{ SearchResult.next_page_number }}">下一页&gt;&gt;</a>
+            {% endif %}
+        </div>
+        </div>
+        </div>
+    {% endif %}
+{% endblock %}

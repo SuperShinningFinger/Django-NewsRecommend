@@ -1,0 +1,48 @@
+.main {
+    font-family: 黑体;
+    margin: 0 auto; /* 居中 这个是必须的，，其它的属性非必须 */
+    width: 1000px; /* 给个宽度 顶到浏览器的两边就看不出居中效果了 */
+    text-align: center; /* 文字等内容居中 */
+    font-size: x-large;
+}
+
+.title {
+    font-family: 黑体;
+    background: #FFFFFF;
+    margin: 0px;
+    border-bottom: 1px #DFDFDF solid;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    padding-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #cc0000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.date {
+    text-align: right;
+    font-size: small;
+    font-style: italic;
+    float: right;
+    padding-right: 20%;
+}
+
+.titleleft {
+    float: right;
+    margin: auto auto;
+}
+
+.titleright {
+    float: left;
+    margin: auto auto;
+}

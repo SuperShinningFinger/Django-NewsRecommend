@@ -1,0 +1,29 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+	<link rel="stylesheet" href="{% static 'css/login.css'%}" />
+     <script type="text/javascript" src="{% static 'js/tbdValidate.js' %}"></script>
+    <div class="content">
+        <div class="login-box">
+            <div class="wrap">
+                <div class="login-box-cen">
+					<br />
+                    <p style="font-size:24px;text-align:center;">用户登录</p><br />
+                    <form aciton="#" method="get">
+                    <div class="login-box-cen-form clearfix mar-bottom20">
+                        <input name="account" type="text" class="login-box-cen-form-input w218" placeholder="请输入用户名" id="login_phone" />
+                        <label class="err err-top40" id="login_phone_text">用户名错误</label>
+                    </div>
+                    <div class="login-box-cen-form clearfix mar-bottom20">
+                        <input name="password" type="text" class="login-box-cen-form-input w218" placeholder="请输入密码" id="login_password" />
+                        <label class="err err-top40" id="login_password_text">请输入密码</label>
+                    </div>
+                    <div class="login-box-cen-form clearfix">
+                        <input type="submit" value="登录" class="login-box-cen-form-button w238" id="login_submit" />
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

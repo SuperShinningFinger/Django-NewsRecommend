@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+    font-size: 12px;
+    font-family: "microsoft yahei", "Arial", "宋体";
+    background: url(../../static/image/p2bg.gif);
+}
+
+.clear {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+form {
+    margin: 0px;
+    display: inline;
+}
+
+.wrap {
+    table-layout: fixed;
+    word-break: break-all;
+    overflow: hidden;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+img, a img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+h1, h12, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    vertical-align: middle;
+    font-family: "tahoma";
+}
+
+.zoom {
+    zoom: 1;
+}
+
+input, select, button {
+    vertical-align: middle;
+}
+
+.en {
+    font-family: "arial";
+}
+
+.txtleft {
+    text-align: left;
+}
+
+.txtright {
+    text-align: right;
+}
+
+.txtcenter {
+    text-align: center;
+}
+
+.b {
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+body, a {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+.k10 {
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.k20 {
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 公共样式_字体 */
+.red, .red a, a.red {
+    color: #c00;
+}
+
+.blue, .blue a, a.blue {
+    color: #173ee8;
+}
+
+.lv, .lv a, a.lv {
+    color: #00723a;
+}
+
+.bai, .bai a, a.bai {
+    color: #fff;
+}
+
+.hei, .hei a, a.hei {
+    color: #000;
+}
+
+.hui, .hui a, a.hui {
+    color: #777;
+}
+
+.yahei {
+    font-family: "microsoft yahei", "黑体";
+}
+
+.f10 {
+    font-size: 10px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}

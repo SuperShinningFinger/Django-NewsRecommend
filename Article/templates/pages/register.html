@@ -1,0 +1,182 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/register.css' %}"/>
+
+    {% if errors %}
+        <li>
+
+            {% for error in errors %}
+             <p style="color: red;">
+                {{error}}
+             </p>
+              {% endfor %}
+        </li>
+    {% endif %}
+    <form action="#" method="post">
+        <p style="font-size:24px;text-align:center;">用户注册</p><br/>
+        <div class="register-box">
+            <div class="wrap">
+                <div class="register-box-con2">
+                    <div class="register-box-con2-box clearfix mar-bottom20">
+                        <label class="register-box-con2-box-left"><em class="bitian">*</em>用户名<br>
+                            <br>
+                            <br>
+                        </label>
+                        <div class="register-box-con2-box-right">
+                            <input name="account" type="text" class="login-box-cen-form-input w358" placeholder="请输入用户名，不超过20个字"
+                                   id="reg_info_company"/>
+                            <label id="reg_info_company_text" class="err err-top40">请输入用户名，不超过20个字</label>
+                        </div>
+                    </div>
+                    <div class="register-box-con2-box clearfix mar-bottom20">
+                        <label class="register-box-con2-box-left"><em class="bitian">*</em>密码</label>
+                        <div class="register-box-con2-box-right">
+                            <input name="password" type="password" class="login-box-cen-form-input w358" placeholder="请输入密码密码，不超过16位"
+                                   id="reg_info_www"/>
+                            <label class="err err-top40" id="reg_info_www_text">请输入正确的密码格式</label>
+                        </div>
+                    </div><div class="register-box-con2-box clearfix mar-bottom20">
+                        <label class="register-box-con2-box-left"><em class="bitian">*</em>确认密码</label>
+                        <div class="register-box-con2-box-right">
+                            <input name="password2" type="password" class="login-box-cen-form-input w358" placeholder="请输入密码，不超过16位"
+                                   id="reg_info_www"/>
+                            <label class="err err-top40" id="reg_info_www_text">请输入正确的密码格式</label>
+                        </div>
+                    </div>
+                    <div class="register-box-con2-box clearfix mar-bottom20">
+                        <label class="register-box-con2-box-left"><em class="bitian"></em>性别</label>
+                        <div class="register-box-con2-box-right">
+                            <span class="sex-name">男</span><input type="radio" class=" sex-radio" name="sex-radio"
+                                                                  style="height:15px; line-height:15px;"/>
+                            <span class="sex-name">女</span><input type="radio" class="sex-radio" name="sex-radio"
+                                                                  style="height:15px; line-height:15px;"/>
+                        </div>
+                    </div>
+                    <div class="register-box-con2-box clearfix mar-bottom20">
+                        <label class="register-box-con2-box-left"><em class="bitian"></em>所在院校</label>
+                        <div class="register-box-con2-box-right">
+                            <input name="school" type="text" class="login-box-cen-form-input w358" placeholder="请输入所在院校，不超过40个字"
+                                   id="reg_info_address"/>
+                            <label class="err err-top40" id="reg_info_address_text">请输入正确的所在院校格式</label>
+                        </div>
+                    </div>
+                    <div class="register-box-con2-box clearfix mar-bottom20">
+                        <label class="register-box-con2-box-left"><em class="bitian"></em>爱 好</label>
+                        <div class="register-box-con2-box-right">
+
+                            <div class="label-wrap">
+                                <div class="label-selected">
+                                    <a href="javascript:;" class="layui-btn layui-btn-sm show-labelitem"
+                                       style="float: right; margin: 4px; display: block;line-height: 30px;">展开标签库 </a>
+                                    <a href="javascript:;" class="layui-btn layui-btn-sm hide-labelitem"
+                                       style="float: right; margin: 4px; display: none;line-height: 30px;">收起标签库 </a>
+                                    <input type="hidden" name="favor">
+                                </div>
+                                <div class="layui-col-md12" id="labelItem">
+                                    <!--标签库-->
+                                    <div class="label-item">
+                                        <li data="2"><span>java 教程</span></li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+                            <script type="text/javascript" src="{% static 'js/layer.js' %}"></script>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $(".show-labelitem").on("click", function () {
+                                        $(this).hide();
+                                        $(".hide-labelitem").show();
+                                        $("#labelItem").show();
+                                    });
+                                    $(".hide-labelitem").on("click", function () {
+                                        $(this).hide();
+                                        $(".show-labelitem").show();
+                                        $("#labelItem").hide();
+                                    });
+                                    $(".label-item").on("click", "li", function () {
+                                        var id = $(this).attr("data");
+                                        var text = $(this).children("span").html();
+                                        var labelHTML = "<li data='" + id + "''>x " + text + "</li>";
+                                        if ($(this).hasClass("selected")) {
+                                            return false;
+                                        } else if ($(".label-selected").children("li").length >= 8) {
+                                            layer.msg("最多可以选择8个哦");
+                                            return false;
+                                        }
+                                        $(".label-selected").append(labelHTML);
+                                        val = '';
+                                        for (var i = 0; i < $(".label-selected").children("li").length; i++) {
+                                            val += $(".label-selected").children("li").eq(i).attr("data") + ',';
+                                        }
+                                        $("input[name='label']").val(val);
+                                        $(this).addClass("selected");
+                                    });
+                                    var val = "";
+                                    $(".label-selected").on("click", "li", function () {
+                                        var id = $(this).attr("data");
+                                        val = '';
+                                        $(this).remove();
+                                        for (var i = 0; i < $(".label-selected").children("li").length; i++) {
+                                            val += $(".label-selected").children("li").eq(i).attr("data") + ',';
+                                        }
+                                        $("input[name='label']").val(val);
+                                        $(".label-item").find("li[data='" + id + "']").removeClass("selected");
+                                    });
+
+
+                                    //点击更换标签
+                                    var limit = 0;
+                                    $(".replacelable").on("click", function () {
+                                        layer.load(1);
+                                        limit += 32;
+                                        $.ajax({
+                                            url: window.location.href,
+                                            type: "post",
+                                            datatype: "json",
+                                            data: {
+                                                labellimit: limit
+                                            },
+                                            success: function (data) {
+                                                layer.closeAll('loading');
+                                                $(".label-item").find("li").remove();//删除原先所有
+                                                var html = '';
+                                                for (var i in data) {
+                                                    html += "<li data=\"" + data[i].term_id + "\">x<span>" + data[i].name + "</span></li>";//拼接标签
+                                                }
+                                                $(".label-item").append(html);//追加至文档
+                                            },
+                                            error: function () {
+                                                layer.closeAll('loading');
+                                                layer.msg("错误~~~");
+                                            }
+                                        })
+                                    })
+                                    //获取标签
+                                    $("#cell").on("click", function () {
+                                        if ($("input[name='label']").val() == "") {
+                                            return false;
+                                        } else {
+                                            layer.msg("标签内容为：" + $("input[name='label']").val());
+                                        }
+                                    })
+                                })
+                            </script>
+
+                        </div>
+                    </div>
+                    <div class="register-box-con2-box clearfix mar-bottom20 mar-top50">
+                        <label class="register-box-con2-box-left"></label>
+                        <div class="register-box-con2-box-right">
+                            <input type="submit" value="注册用户" class="login-box-cen-form-button w380"
+                                   id="reg_info_submit"/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}

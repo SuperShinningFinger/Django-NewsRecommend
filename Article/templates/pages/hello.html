@@ -1,0 +1,17 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+    <link href="{% static "css/hello.css" %}" rel="stylesheet" type="text/css" media="all" />
+        <div class="back">
+        <div class="helloheadline">
+        <h1><b>欢迎使用个性化新闻推荐系统！！</b></h1>
+        <h3><b><a href="admin/">-进入后台管理系统-</a> </b></h3>
+        </div>
+        <div class="helloimg">
+        <img src="../../static/image/1.gif"/>
+        <img src="../../static/image/1.gif"/>
+        <img src="../../static/image/1.gif"/>
+        </div>
+        </div>
+{% endblock %}
