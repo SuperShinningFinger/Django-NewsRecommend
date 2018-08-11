@@ -3,13 +3,15 @@
 {% block content %}
 	<link rel="stylesheet" href="{% static 'css/login.css'%}" />
      <script type="text/javascript" src="{% static 'js/tbdValidate.js' %}"></script>
+
+
     <div class="content">
         <div class="login-box">
             <div class="wrap">
                 <div class="login-box-cen">
 					<br />
                     <p style="font-size:24px;text-align:center;">用户登录</p><br />
-                    <form aciton="#" method="get">
+                    <form aciton="{% url 'newsrecommand:index'%}" method="post">
                     <div class="login-box-cen-form clearfix mar-bottom20">
                         <input name="account" type="text" class="login-box-cen-form-input w218" placeholder="请输入用户名" id="login_phone" />
                         <label class="err err-top40" id="login_phone_text">用户名错误</label>

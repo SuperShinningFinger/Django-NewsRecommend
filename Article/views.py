@@ -132,5 +132,5 @@ def login(request):
 # 用户退出
 def logout(request):
     auth.logout(request)
-    return HttpResponseRedirect('/blog')
+    return HttpResponseRedirect('/pages/index/')
 # Create your views here.

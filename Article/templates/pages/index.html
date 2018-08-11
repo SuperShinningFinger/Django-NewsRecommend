@@ -3,6 +3,7 @@
 {% block content %}
     <link href="{% static "css/index.css" %}" rel="stylesheet" type="text/css" media="all" />
     <div style="height:10px;"></div>
+    {%if request.user.is_authenticated %}
         <div class="news-content clearfix">
             <div class="news-content-fix">
             <div class="news-content-item clearfix" >
@@ -42,7 +43,7 @@
             </div>
             </div>
         </div>
-
+    {% endif %}
 
     <!--main-->
 <div class="news_1">
