@@ -50,24 +50,58 @@
 	<div class="left">
 		<div class="left_1">
 			<h2 ><a href="{% url 'newsrecommand:type' 1 %}" >分类1</a></h2>
-			<p ><a href="">韩国民众打“钓鱼岛是中国土地”标语欢迎习近平</a></p>
+            <table>
+                {% for article in type1 %}
+                    <tr>
+                        <td style="text-align: left"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.title }}</a></td>
+                        <td style="text-align: right"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.date }}</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
 		</div>
-		<div class="left_2">
+		<div class="left_2" style="border-left: #dc2b2b solid 1px">
 			<h2><a href="{% url 'newsrecommand:type' 2 %}">分类2</a></h2>
-			<p style="text-align:center;"><a href="">内马尔隔空向J罗宣战：巴西会让你饱受折磨！</a></p>
+			<table>
+                {% for article in type2 %}
+                    <tr>
+                        <td style="text-align: left"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.title }}</a></td>
+                        <td style="text-align: right"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.date }}</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
 		</div>
 		<div class="left_3">
 			<h2><a href="{% url 'newsrecommand:type' 3 %}">分类3</a></h2>
-			<p style="text-align:center;"><a href="">[策划]解说好声音：重温宋老刘建宏进啦</a></p>
+			<table>
+                {% for article in type3 %}
+                    <tr>
+                        <td style="text-align: left"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.title }}</a></td>
+                        <td style="text-align: right"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.date }}</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
 		</div>
-		<div class="left_4">
+		<div class="left_4" style="border-left: #dc2b2b solid 1px">
 			<h2><a href="{% url 'newsrecommand:type' 4 %}">分类4</a></h2>
-
-			<p style="text-align:center;"><a href="">宝贝遭强吻很无奈：朋友叫我别反抗！</a></p>
+            <table >
+                {% for article in type4 %}
+                    <tr>
+                        <td style="text-align: left"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.title }}</a></td>
+                        <td style="text-align: right"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.date }}</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
 		</div>
-		<div class="left_5">
+		<div class="left_5" >
 			<h2><a href="{% url 'newsrecommand:type' 5 %}">分类5</a></h2>
-			<p style="text-align:center;"><a href="">摄影师拍到美洲豹猎杀鳄鱼全过程</a></p>
+			<table>
+                {% for article in type5 %}
+                    <tr>
+                        <td style="text-align: left"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.title }}</a></td>
+                        <td style="text-align: right"><a href="{% url 'newsrecommand:news'  article.id %}">{{ article.date }}</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
 		</div>
 	</div>
 

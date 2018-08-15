@@ -60,8 +60,34 @@ a {
     color: #666;
 }
 
+.left h2{
+    font-size:20px;
+}
+
+.left_1 a{
+    font-size:18px;
+}
+
+.left_2 a{
+    font-size:15px;
+}
+
+.left_3 a{
+    font-size:15px;
+}
+
+.left_4 a{
+    font-size:15px;
+}
+
+.left_5 a{
+    font-size:15px;
+}
+
+
+
 a:hover {
-    color: #eee;
+    color:  #dc2b2b;
 }
 
 .clearfix::after {
@@ -198,14 +224,15 @@ a:hover {
 	margin-top: 12px;
 }
 
-p{
-    text-align:center;
-}
+
 
 .news_1 .left .left_1{
 	width: 1200px;
-	height: 350px;
+	height: 250px;
 	border-top: 1px solid #CD0200;
+}
+.left table{
+    margin: 0 auto;
 }
 .news_1 .left .left_2{
 	width: 600px;

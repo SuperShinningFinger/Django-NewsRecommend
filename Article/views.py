@@ -172,18 +172,18 @@ def index(request):
     Result4 = []
     Result5 = []
     articles = models.article.objects.filter(type=1).order_by("-date")
-    for n in range(0, 4):
+    for n in range(0, 10):
         Result1.append(articles[n])
     articles = models.article.objects.filter(type=2).order_by("-date")
-    for n in range(0, 4):
+    for n in range(0, 6):
         Result2.append(articles[n])
     articles = models.article.objects.filter(type=3).order_by("-date")
-    for n in range(0, 4):
+    for n in range(0, 6):
         Result3.append(articles[n])
     articles = models.article.objects.filter(type=4).order_by("-date")
-    for n in range(0, 4):
+    for n in range(0, 8):
         Result4.append(articles[n])
     articles = models.article.objects.filter(type=5).order_by("-date")
-    for n in range(0, 4):
+    for n in range(0, 8):
         Result5.append(articles[n])
-    return render(request,{"type1":Result1,"type2":Result2,"type3":Result3,"type4":Result4,"type5":Result5})
+    return render(request, 'pages/index.html',{"type1":Result1,"type2":Result2,"type3":Result3,"type4":Result4,"type5":Result5})
