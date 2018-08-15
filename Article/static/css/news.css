@@ -64,7 +64,7 @@
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    background: url(../images/icons.png) no-repeat -50px 0;
+    background: url(../../static/image/icons.png) no-repeat -50px 0;
     width: 24px;
     height: 20px;
     display: block;

@@ -187,3 +187,6 @@ def index(request):
     for n in range(0, 8):
         Result5.append(articles[n])
     return render(request, 'pages/index.html',{"type1":Result1,"type2":Result2,"type3":Result3,"type4":Result4,"type5":Result5})
+
+
+

@@ -45,6 +45,7 @@
           <dd><a href="{% url 'newsrecommand:register' %}">注册</a></dd>
            {% else %}
           <dd><a href="{% url 'newsrecommand:logout' %}">登出</a></dd>
+          <dd style="color: #ffffff">欢迎你！{{ request.user }}</dd>
             {% endif %}
        </dl>
     </div>
