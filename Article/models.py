@@ -17,5 +17,7 @@ class User(AbstractUser):
     sex=models.CharField(max_length=10,null=True)
     school=models.CharField(max_length=50,null=True)
     type=models.TextField(null=True)
-
+    viewed=models.TextField(null=True)
+    like=models.TextField(null=True)
+    dislike=models.TextField(null=True)
 # Create your models here.

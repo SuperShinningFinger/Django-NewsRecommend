@@ -6,13 +6,38 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from .models import User as User
+from django.shortcuts import HttpResponse
 
 basepath = os.getcwd() + '\\Article\\templates\\'
 
 
 def detail(request, id):
-    news = models.article.objects.get(pk=id)
-    return render(request, 'pages/news.html', {'news': news})
+    try:
+        infos = models.article.objects.get(article_id=id)
+    except Exception as e:
+        return HttpResponse('404')
+    else:
+        infos.click += 1
+        infos.save()
+    if not request.user.is_authenticated:
+        return render(request, 'pages/news.html', {'news': infos})
+    viewed = request.user.viewed
+    if viewed:
+        article_list_id = viewed.split(',')
+        if str(infos.article_id) not in article_list_id:
+            article_list_id.insert(0,str(infos.article_id))
+        else:
+            article_list_id.remove(str(infos.article_id))
+            article_list_id.insert(0,str(infos.article_id))
+        if len(article_list_id) > 100:
+            article_list_id.pop()
+        viewed = ",".join(article_list_id)
+        print(viewed)
+    else:
+        viewed = str(infos.article_id)
+    request.user.viewed = viewed
+    request.user.save()
+    return render(request, 'pages/news.html', {'news': infos})
 
 
 def list(request):
@@ -166,6 +191,7 @@ def type(request, t):
 
 
 def index(request):
+    Viewed = []
     Result1 = []
     Result2 = []
     Result3 = []
@@ -186,7 +212,15 @@ def index(request):
     articles = models.article.objects.filter(type=5).order_by("-date")
     for n in range(0, 8):
         Result5.append(articles[n])
-    return render(request, 'pages/index.html',{"type1":Result1,"type2":Result2,"type3":Result3,"type4":Result4,"type5":Result5})
 
+    viewed=request.user.viewed
+    if request.user.viewed:
+        article_list_id = viewed.split(',')
+        for article_id in article_list_id:
+            article = models.article.objects.get(article_id=int(article_id))
+            Viewed.append(article)
+    else:
+        return render(request, 'pages/index.html',{"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5})
+    return render(request, 'pages/index.html',{"type1":Result1,"type2":Result2,"type3":Result3,"type4":Result4,"type5":Result5,"viewed":Viewed})
 
 

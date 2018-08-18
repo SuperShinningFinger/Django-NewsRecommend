@@ -10,7 +10,7 @@
 
           <!-- 新闻详细内容开始 -->
           <div class="s_tt">{{ news.title }}</div>
-          <div class="s_xx">时间：{{ news.date }}&nbsp;&nbsp;作者：{{ news.author }}浏览：20次  </div>
+          <div class="s_xx">时间：{{ news.date }}&nbsp;&nbsp;作者：{{ news.author }}浏览：{{ news.click }}  </div>
           <div class="s_nr"> {{ news.text|entertobr|spacetonbsp }}</div>
            <div class="label" >
             <span style="font-style:oblique">标签：</span><span style="font-size: small;font-style: italic;le: italic;">{{ news.type }}</span>
