@@ -47,9 +47,9 @@
                     <div class="register-box-con2-box clearfix mar-bottom20">
                         <label class="register-box-con2-box-left"><em class="bitian"></em>性别</label>
                         <div class="register-box-con2-box-right">
-                            <span class="sex-name">男</span><input type="radio" class=" sex-radio" name="sex-radio"
+                            <span class="sex-name">男</span><input type="radio" class=" sex-radio" name="sex-radio" value="男"
                                                                   style="height:15px; line-height:15px;"/>
-                            <span class="sex-name">女</span><input type="radio" class="sex-radio" name="sex-radio"
+                            <span class="sex-name">女</span><input type="radio" class="sex-radio" name="sex-radio" value="女"
                                                                   style="height:15px; line-height:15px;"/>
                         </div>
                     </div>
@@ -61,6 +61,9 @@
                             <label class="err err-top40" id="reg_info_address_text">请输入正确的所在院校格式</label>
                         </div>
                     </div>
+
+
+
                     <div class="register-box-con2-box clearfix mar-bottom20">
                         <label class="register-box-con2-box-left"><em class="bitian"></em>爱 好</label>
                         <div class="register-box-con2-box-right">
@@ -71,12 +74,16 @@
                                        style="float: right; margin: 4px; display: block;line-height: 30px;">展开标签库 </a>
                                     <a href="javascript:;" class="layui-btn layui-btn-sm hide-labelitem"
                                        style="float: right; margin: 4px; display: none;line-height: 30px;">收起标签库 </a>
-                                    <input type="hidden" name="favor">
+                                    <input type="hidden" name="label">
                                 </div>
                                 <div class="layui-col-md12" id="labelItem">
                                     <!--标签库-->
                                     <div class="label-item">
-                                        <li data="2"><span>java 教程</span></li>
+                                        <li data="1"><span>分类1</span></li>
+                                        <li data="2"><span>分类2</span></li>
+                                        <li data="3"><span>分类3</span></li>
+                                        <li data="4"><span>分类4</span></li>
+                                        <li data="5"><span>分类5</span></li>
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +115,10 @@
                                         $(".label-selected").append(labelHTML);
                                         val = '';
                                         for (var i = 0; i < $(".label-selected").children("li").length; i++) {
-                                            val += $(".label-selected").children("li").eq(i).attr("data") + ',';
+                                            if (i == 0)
+                                                val += $(".label-selected").children("li").eq(i).attr("data") ;
+                                            else
+                                                val +=  ','+$(".label-selected").children("li").eq(i).attr("data") ;
                                         }
                                         $("input[name='label']").val(val);
                                         $(this).addClass("selected");
@@ -166,6 +176,8 @@
 
                         </div>
                     </div>
+
+
                     <div class="register-box-con2-box clearfix mar-bottom20 mar-top50">
                         <label class="register-box-con2-box-left"></label>
                         <div class="register-box-con2-box-right">

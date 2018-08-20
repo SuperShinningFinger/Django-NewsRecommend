@@ -11,6 +11,21 @@ from django.shortcuts import HttpResponse
 basepath = os.getcwd() + '\\Article\\templates\\'
 
 
+def add_info(request, infos, data):
+    if data:
+        article_list_id = data.split(',')
+        if str(infos.article_id) not in article_list_id:
+            article_list_id.insert(0, str(infos.article_id))
+        else:
+            article_list_id.remove(str(infos.article_id))
+            article_list_id.insert(0, str(infos.article_id))
+        data = ",".join(article_list_id)
+        print(data)
+    else:
+        data = str(infos.article_id)
+    return data
+
+
 def detail(request, id):
     try:
         infos = models.article.objects.get(article_id=id)
@@ -20,24 +35,35 @@ def detail(request, id):
         infos.click += 1
         infos.save()
     if not request.user.is_authenticated:
-        return render(request, 'pages/news.html', {'news': infos})
+        return render(request, 'pages/news.html', {'news': infos, 'selected': -1})
     viewed = request.user.viewed
-    if viewed:
-        article_list_id = viewed.split(',')
-        if str(infos.article_id) not in article_list_id:
-            article_list_id.insert(0,str(infos.article_id))
-        else:
-            article_list_id.remove(str(infos.article_id))
-            article_list_id.insert(0,str(infos.article_id))
-        if len(article_list_id) > 100:
-            article_list_id.pop()
-        viewed = ",".join(article_list_id)
-        print(viewed)
-    else:
-        viewed = str(infos.article_id)
-    request.user.viewed = viewed
+    request.user.viewed = add_info(request, infos, viewed)
     request.user.save()
-    return render(request, 'pages/news.html', {'news': infos})
+    like=""
+    dislike=""
+
+    if request.POST.get('like-radio') == 'like':
+        like = request.user.like
+        request.user.like = add_info(request, infos, like)
+        request.user.save()
+    if request.POST.get('like-radio') == 'dislike':
+        dislike = request.user.dislike
+        request.user.dislike = add_info(request, infos, dislike)
+        request.user.save()
+
+    if request.user.like:
+        like = request.user.like
+        like = like.split(',')
+
+    if request.user.dislike:
+        dislike = request.user.dislike
+        dislike = dislike.split(',')
+
+    if  not str(id) in like and not str(id) in dislike:
+        return render(request, 'pages/news.html', {'news': infos, 'selected': 0})
+
+
+    return render(request, 'pages/news.html', {'news': infos, 'selected': 1})
 
 
 def list(request):
@@ -128,6 +154,10 @@ def register(request):
             User.objects.create_user(username=account, password=password)
             userlogin = auth.authenticate(username=account, password=password)
             auth.login(request, userlogin)
+            request.user.school = request.POST.get('school')
+            request.user.type = request.POST.get('label')
+            request.user.sex = request.POST.get('sex-radio')
+            request.user.save()
             return HttpResponseRedirect('/pages/index/')
 
     return render(request, 'pages/register.html', {'errors': errors})
@@ -213,14 +243,18 @@ def index(request):
     for n in range(0, 8):
         Result5.append(articles[n])
 
-    viewed=request.user.viewed
+    if not request.user.is_authenticated:
+        return render(request, 'pages/index.html',
+                      {"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5})
+    viewed = request.user.viewed
     if request.user.viewed:
         article_list_id = viewed.split(',')
         for article_id in article_list_id:
             article = models.article.objects.get(article_id=int(article_id))
             Viewed.append(article)
     else:
-        return render(request, 'pages/index.html',{"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5})
-    return render(request, 'pages/index.html',{"type1":Result1,"type2":Result2,"type3":Result3,"type4":Result4,"type5":Result5,"viewed":Viewed})
-
-
+        return render(request, 'pages/index.html',
+                      {"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5})
+    return render(request, 'pages/index.html',
+                  {"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5,
+                   "viewed": Viewed})
