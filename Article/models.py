@@ -12,7 +12,8 @@ class article(models.Model):
         return self.title
 
 class User(AbstractUser):
-    username=models.CharField(max_length=50,primary_key=True)
+    user_id= models.IntegerField(primary_key=True)
+    username=models.CharField(max_length=50,unique=True)
     password=models.CharField(max_length=20)
     sex=models.CharField(max_length=10,null=True)
     school=models.CharField(max_length=50,null=True)
