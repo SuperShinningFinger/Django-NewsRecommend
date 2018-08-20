@@ -3,6 +3,10 @@
 {% load static %}
 {% block content %}
     <link href="{% static "css/news.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="{% static "js/jquery-1.8.0.min.js" %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/layer.js' %}"></script>
+
     <!-- 头部开始 -->
     <div class="container">
         <div class="weizhi"><strong class="red">当前位置:</strong> 首页 - 新闻中心</div>
@@ -17,22 +21,52 @@
                     style="font-size: small;font-style: italic;le: italic;">{{ news.type }}</span>
             </div>
             {% if not selected == -1 %}
-            <div class="nypaihang f14" style="text-align: center">
-            <h3 class="tjhc_t"><strong class="f18 hei">你喜欢本条新闻吗？</strong></h3>
-                {% if  selected  == 0 %}
-                <form action="{% url 'newsrecommand:news' news.article_id %}" method="post">
-                    <span>喜欢</span><input type="radio" class=" like-radio" name="like-radio" value="like"
-                                          style="height:15px; line-height:15px;"/>
-                    <span>不喜欢</span><input type="radio" class="like-radio" name="like-radio" value="dislike"
-                                                            style="height:15px; line-height:15px;"/>
-                    <div><input type="submit" value="确定"></div>
-                </form>
-                {% endif %}
-                {% if selected == 1 %}
-                    <span>你已经评过分啦</span>
-                {% endif %}
-            </div>
-        {% endif %}
+                <div class="nypaihang f14" style="text-align: center">
+                    <h3 class="tjhc_t"><strong class="f18 hei">你喜欢本条新闻吗？</strong></h3>
+                    {% if  selected  == 0 %}
+                        <form name="score" action="{% url 'newsrecommand:news' news.article_id %}" method="post" onload="clear()">
+                            <div class="content">
+                                <div id="startone" class="block clearfix">
+                                    <div class="star_score"></div>
+                                    <p style="float:left;">您的评分：<span class="fenshu" id="fenshu"></span> 分</p>
+                                    <input type="text" name="score">
+                                </div>
+                                <script type="text/javascript" src="{% static "js/startScore.js" %}"></script>
+                                <script>
+                                    scoreFun($("#startone"))
+                                    scoreFun($("#starttwo"), {
+                                        fen_d: 22,//每一个a的宽度
+                                        ScoreGrade: 5//a的个数 10或者
+                                    })
+                                    //显示分数
+                                    $(".show_number li p").each(function (index, element) {
+                                        var num = $(this).attr("tip");
+                                        var www = num * 2 * 16;//\
+                                        $(this).css("width", www);
+                                        $(this).parent(".atar_Show").siblings("span").text(num + "分");
+                                    });
+                                    $(function () {
+                                        $(".star_score").on("click", function () {
+                                            var num = document.getElementById("fenshu").innerText;
+                                            $("input[name='score']").val(num);
+                                        });
+                                    })
+                                    function clear()
+                                    {
+                                        $("input[name='score']").val("");
+
+                                    }
+                                </script>
+                            </div>
+                            <br/>
+                            <div style="text-align: center"><input type="submit" value="确定"></div>
+                        </form>
+                    {% endif %}
+                    {% if selected == 1 %}
+                        <span>你已经评过分啦</span>
+                    {% endif %}
+                </div>
+            {% endif %}
         </div>
         <!-- 新闻详细内容结束 -->
         <div class="w330 right">

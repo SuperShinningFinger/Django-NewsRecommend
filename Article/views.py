@@ -39,30 +39,15 @@ def detail(request, id):
     viewed = request.user.viewed
     request.user.viewed = add_info(request, infos, viewed)
     request.user.save()
-    like=""
-    dislike=""
-
-    if request.POST.get('like-radio') == 'like':
-        like = request.user.like
-        request.user.like = add_info(request, infos, like)
+    scored = request.user.scored
+    if request.POST.get('score'):
+        request.user.scored = add_info(request, infos, scored)
+        score = models.Score.objects.create(user=request.user, article=infos, score=float(request.POST.get('score')))
+        score.save()
         request.user.save()
-    if request.POST.get('like-radio') == 'dislike':
-        dislike = request.user.dislike
-        request.user.dislike = add_info(request, infos, dislike)
-        request.user.save()
-
-    if request.user.like:
-        like = request.user.like
-        like = like.split(',')
-
-    if request.user.dislike:
-        dislike = request.user.dislike
-        dislike = dislike.split(',')
-
-    if  not str(id) in like and not str(id) in dislike:
+        return render(request, 'pages/news.html', {'news': infos, 'selected': 1})
+    if not scored or not str(id) in scored:
         return render(request, 'pages/news.html', {'news': infos, 'selected': 0})
-
-
     return render(request, 'pages/news.html', {'news': infos, 'selected': 1})
 
 

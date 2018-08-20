@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="150ea886-6667-40ba-b747-7d452fe64859" name="默认的" comment="添加浏览记录显示，将要完成喜欢与不喜欢新闻的评分系统">
+    <list default="true" id="150ea886-6667-40ba-b747-7d452fe64859" name="默认的" comment="添加选择喜好功能，修复了type无法储存的bug，将要完成混合推荐功能">
+      <change afterPath="$PROJECT_DIR$/Article/migrations/0002_auto_20180820_1603.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Article/migrations/0003_auto_20180820_1705.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NewRecommand.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NewRecommand.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/migrations/0002_auto_20180818_1009.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/static/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/news.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/templates/pages/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/news.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +50,8 @@
     <session id="264094875">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.23" value="1" />
@@ -51,40 +62,40 @@
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="9" />
           <entry key="html" value="28" />
-          <entry key="py" value="39" />
+          <entry key="py" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="9" />
           <entry key="HTML" value="28" />
-          <entry key="Python" value="39" />
+          <entry key="Python" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="349" />
-          <entry key="html" value="1629" />
-          <entry key="py" value="2780" />
-          <entry key="py@NewRecommand" value="8" />
-          <entry key="txt" value="113" />
+          <entry key="css" value="351" />
+          <entry key="html" value="2093" />
+          <entry key="py" value="3234" />
+          <entry key="py@NewRecommand" value="27" />
+          <entry key="txt" value="165" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="349" />
-          <entry key="CommandLine" value="8" />
-          <entry key="HTML" value="1629" />
-          <entry key="PLAIN_TEXT" value="113" />
-          <entry key="Python" value="2780" />
+          <entry key="CSS" value="351" />
+          <entry key="CommandLine" value="22" />
+          <entry key="HTML" value="2093" />
+          <entry key="PLAIN_TEXT" value="170" />
+          <entry key="Python" value="3234" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -98,26 +109,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Article/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="157" column="55" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
+            <state relative-caret-position="372">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1534730261436" expanded="true" signature="865:866" ph="..." />
-                <marker date="1534730261436" expanded="true" signature="7341:7342" ph="..." />
-                <marker date="1534730261436" expanded="true" signature="7464:7465" ph="..." />
+                <marker date="1534755799102" expanded="true" signature="865:866" ph="..." />
+                <marker date="1534755799102" expanded="true" signature="7127:7128" ph="..." />
+                <marker date="1534755799102" expanded="true" signature="7250:7251" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Article/urls.py">
+        <entry file="file://$PROJECT_DIR$/Article/migrations/0001_initial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-              <folding>
-                <element signature="e#636#672#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="487">
+              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -125,26 +133,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="459">
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Article/templates/pages/register.html">
+        <entry file="file://$PROJECT_DIR$/Article/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="114" column="79" selection-start-line="114" selection-start-column="79" selection-end-line="114" selection-end-column="79" />
+            <state relative-caret-position="240">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1534756038049" expanded="true" signature="899:1094" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Article/templates/pages/index.html">
+        <entry file="file://$PROJECT_DIR$/Article/templates/pages/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="-891">
+              <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -152,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Article/static/css/news.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1728">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+            <state relative-caret-position="75">
+              <caret line="211" column="8" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -221,6 +236,13 @@
       <find>request.</find>
       <find>auth</find>
       <find>input</find>
+      <find>article</find>
+      <find>fenshu</find>
+      <find>label</find>
+      <find>tip</find>
+      <find>show_number li p</find>
+      <find>show_number</find>
+      <find>HttpResponseRedirect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,24 +267,24 @@
         <option value="$PROJECT_DIR$/Article/static/css/register.css" />
         <option value="$PROJECT_DIR$/Article/templates/pages/search.html" />
         <option value="$PROJECT_DIR$/Article/templates/pages/hello.html" />
-        <option value="$PROJECT_DIR$/Article/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Article/admin.py" />
         <option value="$PROJECT_DIR$/Article/templates/pages/logout.html" />
         <option value="$PROJECT_DIR$/Article/templates/pages/login.html" />
         <option value="$PROJECT_DIR$/Article/templates/pages/type.html" />
         <option value="$PROJECT_DIR$/Article/urls.py" />
-        <option value="$PROJECT_DIR$/NewRecommand/settings.py" />
         <option value="$PROJECT_DIR$/Article/static/css/base.css" />
         <option value="$PROJECT_DIR$/Article/static/css/index.css" />
-        <option value="$PROJECT_DIR$/Article/static/css/news.css" />
         <option value="$PROJECT_DIR$/Article/templates/master.html" />
-        <option value="$PROJECT_DIR$/Article/models.py" />
         <option value="$PROJECT_DIR$/Article/templates/pages/index.html" />
         <option value="$PROJECT_DIR$/Article/templatetags/judge_selected.py" />
+        <option value="$PROJECT_DIR$/Article/templates/pages/register.html" />
+        <option value="$PROJECT_DIR$/NewRecommand/settings.py" />
+        <option value="$PROJECT_DIR$/Article/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/Article/static/css/news.css" />
         <option value="$PROJECT_DIR$/Article/templates/pages/news.html" />
         <option value="$PROJECT_DIR$/Article/views.py" />
-        <option value="$PROJECT_DIR$/Article/templates/pages/register.html" />
+        <option value="$PROJECT_DIR$/Article/models.py" />
       </list>
     </option>
   </component>
@@ -284,7 +306,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,6 +323,19 @@
               <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
               <item name="Article" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
+              <item name="Article" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
+              <item name="Article" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NewRecommand" type="b2602c69:ProjectViewProjectNode" />
@@ -331,17 +365,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Max/PycharmProjects/NewRecommand/Article/templates/pages/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Tencent Files/791174722/FileRecv/Python_work" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/untitled" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -460,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534562850921</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加选择喜好功能，修复了type无法储存的bug，将要完成混合推荐功能">
+      <created>1534731127782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534731127782</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -474,14 +516,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825785" visible="true" weight="0.24460043" />
-      <window_info id="Structure" order="1" sideWeight="0.5017422" side_tool="true" weight="0.24460043" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49423078" visible="true" weight="0.2575594" />
+      <window_info id="Structure" order="1" sideWeight="0.50576925" side_tool="true" weight="0.2575594" />
       <window_info id="Favorites" order="2" sideWeight="0.5017422" side_tool="true" weight="0.24460043" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49082074" visible="true" weight="0.34098738" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48812094" weight="0.34098738" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,9 +531,9 @@
       <window_info anchor="bottom" id="运行" order="8" sideWeight="0.49733475" weight="0.5822511" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3295063" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5091793" side_tool="true" visible="true" weight="0.34098738" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49838012" weight="0.3283582" />
-      <window_info anchor="bottom" id="manage.py@NewRecommand" order="13" sideWeight="0.498557" weight="0.40298507" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5048596" side_tool="true" weight="0.40298507" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4973002" weight="0.3283582" />
+      <window_info active="true" anchor="bottom" id="manage.py@NewRecommand" order="13" sideWeight="0.4951404" visible="true" weight="0.40298507" />
       <window_info anchor="bottom" id="Python Console" order="14" />
       <window_info anchor="bottom" id="找到" order="15" weight="0.32900432" />
       <window_info anchor="bottom" id="调试" order="16" weight="0.32931036" />
@@ -526,16 +567,10 @@
     <MESSAGE value="添加首页分类显示，调整首页与新闻正文字体大小" />
     <MESSAGE value="添加登录用户名显示" />
     <MESSAGE value="添加浏览记录显示，将要完成喜欢与不喜欢新闻的评分系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加浏览记录显示，将要完成喜欢与不喜欢新闻的评分系统" />
+    <MESSAGE value="添加选择喜好功能，修复了type无法储存的bug，将要完成混合推荐功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加选择喜好功能，修复了type无法储存的bug，将要完成混合推荐功能" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Article/templates/dealspace.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaultfilters.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -672,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Article/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Article/templates/pages/logout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -690,13 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewRecommand/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -718,19 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Article/migrations/0002_auto_20180818_1009.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Article/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,10 +767,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Article/static/css/news.css">
+    <entry file="file://$PROJECT_DIR$/NewRecommand/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        <state relative-caret-position="2430">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
@@ -787,30 +795,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Article/views.py">
+    <entry file="file://$PROJECT_DIR$/Article/migrations/0002_auto_20180818_1009.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="157" column="55" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1534730261436" expanded="true" signature="865:866" ph="..." />
-            <marker date="1534730261436" expanded="true" signature="7341:7342" ph="..." />
-            <marker date="1534730261436" expanded="true" signature="7464:7465" ph="..." />
-          </folding>
-        </state>
+        <state relative-caret-position="-405" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
+    <entry file="file://$PROJECT_DIR$/Article/static/css/news.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        <state relative-caret-position="75">
+          <caret line="211" column="8" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/templates/pages/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="114" column="79" selection-start-line="114" selection-start-column="79" selection-end-line="114" selection-end-column="79" />
+        <state relative-caret-position="-891">
+          <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/migrations/0002_auto_20180820_1430.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1534755799102" expanded="true" signature="865:866" ph="..." />
+            <marker date="1534755799102" expanded="true" signature="7127:7128" ph="..." />
+            <marker date="1534755799102" expanded="true" signature="7250:7251" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1534756038049" expanded="true" signature="899:1094" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
