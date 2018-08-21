@@ -19,7 +19,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 app_name='Article'
 urlpatterns = [
-    path('news/<int:id>/', views.detail,name='news'),
+    path('news/<int:id>', views.detail,name='news'),
     path('index/', views.index,name='index'),
     path('master/', views.search,name='master'),
     path('search/', views.search,name='search'),

@@ -70,7 +70,7 @@ def list(request):
 
 def search(request):
     limit = 20  # 这里是，每页限制的信息条数
-    keyword = request.GET['searchtext']
+    keyword = request.POST.get('searchtext')
     allArticle = models.article.objects.all().order_by("-date")
     SearchResult = []
     for article in allArticle:
@@ -85,7 +85,7 @@ def search(request):
     SearchStatus = "Error" if len(SearchResult) == 0 else "Success"
     ResultAmount = len(SearchResult)
     paginator = Paginator(SearchResult, limit)  # 设置分页信息；
-    page = request.GET.get('page', 1)
+    page = request.POST.get('page', 1)
     try:
         article = paginator.page(page)
     except PageNotAnInteger:
