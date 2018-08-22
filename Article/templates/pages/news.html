@@ -24,7 +24,8 @@
                 <div class="nypaihang f14" style="text-align: center">
                     <h3 class="tjhc_t"><strong class="f18 hei">你喜欢本条新闻吗？</strong></h3>
                     {% if  selected  == 0 %}
-                        <form name="score" action="{% url 'newsrecommand:news' news.article_id %}" method="post" onload="clear()">
+                        <form name="score" action="{% url 'newsrecommand:news' news.article_id %}" method="post"
+                              onload="clear()">
                             <div class="content">
                                 <div id="startone" class="block clearfix">
                                     <div class="star_score"></div>
@@ -51,8 +52,8 @@
                                             $("input[name='score']").val(num);
                                         });
                                     })
-                                    function clear()
-                                    {
+
+                                    function clear() {
                                         $("input[name='score']").val("");
 
                                     }
@@ -70,22 +71,18 @@
         </div>
         <!-- 新闻详细内容结束 -->
         <div class="w330 right">
-            <!-- 推荐新闻 开始 -->
-            <h3 class="tjhc_t"><strong class="f18 hei">推荐新闻</strong></h3>
-            <div class="k10"></div>
-            <ul class="nypaihang f14">
-                <li><a href="#">新闻标题</a></li>
-
-            </ul>
-            <div class="clear"></div>
-            <!-- 推荐新闻 结束 -->
             <div class="k10"></div>
             <!-- 热门文章 开始 -->
             <h3 class="tjhc_t"><strong class="f18 hei">热门新闻</strong></h3>
             <div class="k10"></div>
             <ul class="nypaihang f14">
-                <li><a href="#">新闻标题</a></li>
-
+                {% for article in hot_news %}
+                    <li style="overflow : hidden;text-overflow:ellipsis;white-space: nowrap;">
+                        <a href="{% url 'newsrecommand:news' article.article_id %}">
+                            <span>{{ article.title }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
         <div class="clear"></div>

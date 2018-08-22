@@ -16,7 +16,7 @@
         <div class="main">
         <ul>
             {% for article in SearchResult %}
-                <li class="title">
+                <li class="title" style="overflow : hidden;text-overflow:ellipsis;white-space: nowrap;">
                 <article class="excerpt excerpt-first">
                     <div class="titleright">
                         <b><a class="gotoArchive" href="{% url 'newsrecommand:news' article.article_id %}" title="{{ article.title }}">{{ article.title }}</a></b>
