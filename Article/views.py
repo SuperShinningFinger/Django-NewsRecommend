@@ -113,7 +113,7 @@ def detail(request, id):
         request.user.save()
         return render(request, 'pages/news.html', {'news': infos, 'selected': 1, 'hot_news': hot_articles})
     if not scored or not str(id) in scored:
-        return render(request, 'pages/news.html', {'news': infos, 'selected': 0,  'hot_news': hot_articles})
+        return render(request, 'pages/news.html', {'news': infos, 'selected': 0, 'hot_news': hot_articles})
     return render(request, 'pages/news.html', {'news': infos, 'selected': 1, 'hot_news': hot_articles})
 
 
@@ -280,33 +280,31 @@ def index(request):
     Result4 = []
     Result5 = []
     articles = models.article.objects.filter(type=1).order_by("-date")
-    for n in range(0, 10):
+    for n in range(0,len(articles)):
         Result1.append(articles[n])
     articles = models.article.objects.filter(type=2).order_by("-date")
-    for n in range(0, 6):
+    for n in range(0,len(articles)):
         Result2.append(articles[n])
     articles = models.article.objects.filter(type=3).order_by("-date")
-    for n in range(0, 6):
+    for n in range(0,len(articles)):
         Result3.append(articles[n])
     articles = models.article.objects.filter(type=4).order_by("-date")
-    for n in range(0, 8):
+    for n in range(0,len(articles)):
         Result4.append(articles[n])
     articles = models.article.objects.filter(type=5).order_by("-date")
-    for n in range(0, 8):
+    for n in range(0,len(articles)):
         Result5.append(articles[n])
 
     if not request.user.is_authenticated:
+        Result1 = Result1[0:10]
+        Result2 = Result2[0:6]
+        Result3 = Result3[0:6]
+        Result4 = Result4[0:8]
+        Result5 = Result5[0:8]
         return render(request, 'pages/index.html',
                       {"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5})
+    last_type = 0
     viewed = request.user.viewed
-    index = 0
-    recommend_id = recommend(request)
-    for i in recommend_id:
-        article = models.article.objects.get(article_id=int(i))
-        Recommend.append(article)
-        index += 1
-        if index == 10:
-            break;
     if request.user.viewed:
         article_list_id = viewed.split(',')
         for article_id in article_list_id:
@@ -314,9 +312,88 @@ def index(request):
             Viewed.append(article)
             if len(Viewed) > 9:
                 Viewed = Viewed[0:10]
+        last_type = Viewed[0].type
+    index = 0
+    while index < 3:
+        j = 0
+        if last_type == '1':
+            while (Result1[j] in Recommend):
+                j += 1
+            Recommend.append(Result1[j])
+        if last_type == '2':
+            while (Result2[j] in Recommend):
+                j += 1
+            Recommend.append(Result2[j])
+        if last_type == '3':
+            while (Result3[j] in Recommend):
+                j += 1
+            Recommend.append(Result3[j])
+        if last_type == '4':
+            while (Result4[j] in Recommend):
+                j += 1
+            Recommend.append(Result4[j])
+        if last_type == '5':
+            while (Result5[j] in Recommend):
+                j += 1
+            Recommend.append(Result5[j])
+        index += 1
+
+    index = 0
+    recommend_id = recommend(request)
+    for i in recommend_id:
+        article = models.article.objects.get(article_id=int(i))
+        Recommend.append(article)
+        index += 1
+        if index == 3:
+            break
+    type = request.user.type
+    type_num = 0
+    if request.user.type:
+        type = type.split(',')
+        for i in type:
+            j = 0
+            type_num += 1
+            if i == '1':
+                while (Result1[j] in Recommend):
+                    j += 1
+                Recommend.append(Result1[j])
+            if i == '2':
+                while (Result2[j] in Recommend):
+                    j += 1
+                Recommend.append(Result2[j])
+            if i == '3':
+                while (Result3[j] in Recommend):
+                    j += 1
+                Recommend.append(Result3[j])
+            if i == '4':
+                while (Result4[j] in Recommend):
+                    j += 1
+                Recommend.append(Result4[j])
+            if i == '5':
+                while (Result5[j] in Recommend):
+                    j += 1
+                Recommend.append(Result5[j])
+    hot = models.article.objects.all().order_by("-click")
+    j = 0
+    for i in hot:
+        if i not in Recommend:
+            Recommend.append(i)
+            j += 1
+        if j == 4 - type_num:
+            break
     else:
+        Result1 = Result1[0:10]
+        Result2 = Result2[0:6]
+        Result3 = Result3[0:6]
+        Result4 = Result4[0:8]
+        Result5 = Result5[0:8]
         return render(request, 'pages/index.html',
                       {"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5})
+    Result1 = Result1[0:10]
+    Result2 = Result2[0:6]
+    Result3 = Result3[0:6]
+    Result4 = Result4[0:8]
+    Result5 = Result5[0:8]
     return render(request, 'pages/index.html',
                   {"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5,
                    "viewed": Viewed, "recommend": Recommend})

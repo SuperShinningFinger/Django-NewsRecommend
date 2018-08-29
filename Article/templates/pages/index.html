@@ -18,7 +18,7 @@
                         {% if not recommend %}
                             <span>还没有能推荐的新闻哦</span>
                         {% endif %}
-                        {% if recommend  %}
+                        {% if recommend %}
                             {% for article in recommend %}
                                 <li class="clearFix">
                                     <a href="{% url 'newsrecommand:news' article.article_id %}">
@@ -42,7 +42,7 @@
                         {% if not request.user.viewed %}
                             <span>还没有浏览过新闻哦</span>
                         {% endif %}
-                        {% if request.user.viewed  %}
+                        {% if request.user.viewed %}
                             {% for article in viewed %}
                                 <li class="clearFix">
                                     <a href="{% url 'newsrecommand:news' article.article_id %}">
@@ -61,7 +61,7 @@
     <div class="news_1">
         <div class="left">
             <div class="left_1">
-                <h2><a href="{% url 'newsrecommand:type' 1 %}">分类1</a></h2>
+                <h2><a href="{% url 'newsrecommand:type' 1 %}">论文专利</a></h2>
                 <table>
                     {% for article in type1 %}
                         <tr>
@@ -76,7 +76,7 @@
                 </table>
             </div>
             <div class="left_2" style="border-left: #dc2b2b solid 1px">
-                <h2><a href="{% url 'newsrecommand:type' 2 %}">分类2</a></h2>
+                <h2><a href="{% url 'newsrecommand:type' 2 %}">校园活动</a></h2>
                 <table>
                     {% for article in type2 %}
                         <tr>
@@ -91,7 +91,7 @@
                 </table>
             </div>
             <div class="left_3">
-                <h2><a href="{% url 'newsrecommand:type' 3 %}">分类3</a></h2>
+                <h2><a href="{% url 'newsrecommand:type' 3 %}">大赛通知</a></h2>
                 <table>
                     {% for article in type3 %}
                         <tr>
@@ -106,7 +106,7 @@
                 </table>
             </div>
             <div class="left_4" style="border-left: #dc2b2b solid 1px">
-                <h2><a href="{% url 'newsrecommand:type' 4 %}">分类4</a></h2>
+                <h2><a href="{% url 'newsrecommand:type' 4 %}">工作安排</a></h2>
                 <table>
                     {% for article in type4 %}
                         <tr>
@@ -121,7 +121,7 @@
                 </table>
             </div>
             <div class="left_5">
-                <h2><a href="{% url 'newsrecommand:type' 5 %}">分类5</a></h2>
+                <h2><a href="{% url 'newsrecommand:type' 5 %}">讲座会议</a></h2>
                 <table>
                     {% for article in type5 %}
                         <tr>
