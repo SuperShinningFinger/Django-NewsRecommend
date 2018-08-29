@@ -14,7 +14,7 @@ from django.contrib import auth
 from .models import User as User
 from django.shortcuts import HttpResponse
 
-basepath = os.getcwd() + '\\Article\\templates\\'
+basepath = os.getcwd() + '/Article/templates/'
 
 
 def normalizeRarings(rating, record):
