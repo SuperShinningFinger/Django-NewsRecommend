@@ -3,12 +3,11 @@ import numpy as np
 import tensorflow as tf
 import sqlite3
 from Article import models
-
+DB_PATH = "/home/max/PycharmProjects/NewsRecommand/news.sqlite"
 
 def num2info(data):
-    str_data=""
-    for i in data:
-        str_data = ",".join(i)
+    data_n = [str(i.article_id) for i in data]
+    str_data = ",".join(data_n)
     str_data.strip('0')
     return str_data
 
@@ -26,9 +25,10 @@ def normalizeRarings(rating, record):
 
 def user_recommend(request):
     # 读入数据
-    conn = sqlite3.connect("news.sqlite")
+    conn = sqlite3.connect(DB_PATH)
     ratings_df = pd.read_sql_query("select * from Article_score;", conn)
     ratings_df.tail()
+    print("1")
     # 初始化用户与新闻信息，将Id做数组保存
     userNo = ratings_df['user_id'].max() + 1
     pageNo = ratings_df['article_id'].max() + 1
@@ -94,7 +94,6 @@ def fix_recommend(request):
     articles = models.article.objects.filter(type=5).order_by("-date")
     for n in range(0, len(articles)):
         Result5.append(articles[n])
-
     # 上一次点击的type
     last_type = 0
     viewed = request.viewed
@@ -106,7 +105,6 @@ def fix_recommend(request):
             if len(Viewed) > 9:
                 Viewed = Viewed[0:10]
         last_type = Viewed[0].type
-
     # 将上次点击的类型3个加入结果
     index = 0
     while index < 3:
@@ -132,7 +130,6 @@ def fix_recommend(request):
                 j += 1
             Recommend.append(Result5[j])
         index += 1
-
     # 协同过滤
     index = 0
     recommend_id = user_recommend(request)
@@ -142,7 +139,7 @@ def fix_recommend(request):
         index += 1
         if index == 3:
             break
-
+    print("user_recommend compelete")
     # 喜欢的类型
     type = request.type
     type_num = 0
@@ -186,5 +183,6 @@ def fix_recommend(request):
 def recommend():
     user = models.User.objects.all()
     for i in user:
-        i.recommend = num2info(fix_recommend(i))
-    print("推荐完毕，写入DB")
+        temp = fix_recommend(i)
+        i.recommend = num2info(temp)
+        i.save()

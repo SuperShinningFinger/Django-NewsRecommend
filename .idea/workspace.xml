@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="150ea886-6667-40ba-b747-7d452fe64859" name="默认的" comment="修复了type与search的bug，更新了interpreter的版本">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/recommend.py" afterDir="false" />
+    <list default="true" id="150ea886-6667-40ba-b747-7d452fe64859" name="默认的" comment="修复了Linux兼容的templates not exist问题与Django2.1的语言编译问题">
       <change beforePath="$PROJECT_DIR$/.idea/NewRecommand.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NewRecommand.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article/recommend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/recommend.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewRecommand/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewRecommand/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/news.sqlite" afterDir="false" />
     </list>
@@ -16,6 +16,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NewsRecommand$recommend.coverage" NAME="recommend Coverage Results" MODIFIED="1535873218469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Article" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -31,7 +34,7 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="news" type="feb32156:DbDataSourceImpl" />
+        <item name="news [2]" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -99,6 +102,38 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
+    <session id="800126757">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="40" />
+          <entry key="py" value="625" />
+          <entry key="py@NewRecommand" value="30" />
+          <entry key="sql" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CommandLine" value="30" />
+          <entry key="HTML" value="40" />
+          <entry key="Python" value="625" />
+          <entry key="Scratch" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="3" />
+          <entry key="sql" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="3" />
+          <entry key="Scratch" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.lifecycle.project" />
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="NewRecommand" />
@@ -108,14 +143,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Article/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="346">
+              <caret line="265" column="101" selection-start-line="265" selection-start-column="101" selection-end-line="265" selection-end-column="101" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1535863311807" expanded="true" signature="1032:1033" ph="..." />
-                <marker date="1535863311807" expanded="true" signature="7509:7510" ph="..." />
-                <marker date="1535863311807" expanded="true" signature="7651:7652" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/templates/pages/type.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+              <folding>
+                <element signature="e#278#347#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/templates/master.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-731">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1738">
+              <caret line="79" column="93" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="93" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/templates/pages/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -123,17 +197,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NewRecommand/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="140" column="1" lean-forward="true" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django_crontab/crontab.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="368">
+              <caret line="139" column="47" selection-start-line="139" selection-start-column="47" selection-end-line="139" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -141,10 +206,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Article/recommend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="185" column="4" lean-forward="true" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
+            <state relative-caret-position="132">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/templatetags/space2nbsp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/templates/pages/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+              <folding>
+                <element signature="e#788#857#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,9 +323,12 @@
         <option value="$PROJECT_DIR$/Article/templates/pages/news.html" />
         <option value="$PROJECT_DIR$/Article/templates/pages/type.html" />
         <option value="$PROJECT_DIR$/Article/templates/pages/search.html" />
-        <option value="$PROJECT_DIR$/Article/templates/pages/index.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0f6823a2-0587-4cea-a4ec-69a65565d42a/console.sql" />
+        <option value="$PROJECT_DIR$/Article/hello.py" />
         <option value="$PROJECT_DIR$/Article/views.py" />
         <option value="$PROJECT_DIR$/Article/templatetags/recommend.py" />
+        <option value="$PROJECT_DIR$/Article/templates/pages/index.html" />
+        <option value="$PROJECT_DIR$/Article/recommend.py" />
         <option value="$PROJECT_DIR$/NewRecommand/settings.py" />
       </list>
     </option>
@@ -264,17 +356,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="NewRecommand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
+              <item name="NewsRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsRecommand" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="NewRecommand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
+              <item name="NewsRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsRecommand" type="462c0819:PsiDirectoryNode" />
               <item name="Article" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="NewRecommand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
+              <item name="NewsRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsRecommand" type="462c0819:PsiDirectoryNode" />
               <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -287,25 +379,147 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Max/PycharmProjects/NewRecommand/Article/templates/pages/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Article" />
+      <recent name="$PROJECT_DIR$/Article/templatetags" />
+      <recent name="D:\document\大创\NewRecommand\Article" />
+      <recent name="D:\document\大创\NewRecommand\NewRecommand\cron" />
+      <recent name="D:\document\大创\NewRecommand\NewRecommand" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article\templatetags" />
       <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article\templates" />
       <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\document\大创\NewRecommand\Article" />
-      <recent name="D:\document\大创\NewRecommand\NewRecommand\cron" />
-      <recent name="D:\document\大创\NewRecommand\NewRecommand" />
-      <recent name="D:\document\大创\NewRecommand" />
-      <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article\templates" />
-    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/NewRecommand.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Article/templates/master.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Article/templates/pages/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Article/views.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/NewRecommand/settings.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/news.sqlite</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/encodings.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Article/recommend.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Article/static/js/jquery-1.8.0.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Article/static/js/startScore.js</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -319,8 +533,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.NewRecommand">
+  <component name="RunManager" selected="Python.recommend">
     <configuration name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NewRecommand/Article/templates/pages/login.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="recommend" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NewRecommand" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Article" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Article/recommend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="NewRecommand" type="Python.DjangoServer" factoryName="Django server">
@@ -350,9 +586,11 @@
     <list>
       <item itemvalue="Django server.NewRecommand" />
       <item itemvalue="JavaScript Debug.login.html" />
+      <item itemvalue="Python.recommend" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.recommend" />
         <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
@@ -458,33 +696,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="60" y="0" width="1860" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49423078" visible="true" weight="0.3115551" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49423078" visible="true" weight="0.1953125" />
       <window_info id="Structure" order="1" sideWeight="0.50576925" side_tool="true" weight="0.2575594" />
       <window_info id="Favorites" order="2" sideWeight="0.5017422" side_tool="true" weight="0.24460043" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4800216" weight="0.34098738" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49784017" weight="0.3283582" />
-      <window_info anchor="bottom" id="运行" order="7" sideWeight="0.49733475" weight="0.5822511" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946004" weight="0.3295063" />
-      <window_info anchor="bottom" id="Database Changes" order="10" sideWeight="0.49946004" weight="0.3295063" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5107991" side_tool="true" visible="true" weight="0.3880597" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49676025" weight="0.3283582" />
-      <window_info active="true" anchor="bottom" id="manage.py@NewRecommand" order="13" sideWeight="0.48920086" visible="true" weight="0.3880597" />
-      <window_info anchor="bottom" id="Python Console" order="14" />
-      <window_info anchor="bottom" id="找到" order="15" weight="0.32900432" />
-      <window_info anchor="bottom" id="调试" order="16" weight="0.32931036" />
+      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4955357" weight="0.32997763" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.47154018" weight="0.34004474" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49609375" weight="0.3277405" />
+      <window_info anchor="bottom" id="运行" order="8" sideWeight="0.49733475" weight="0.5822511" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49832588" weight="0.32885906" />
+      <window_info anchor="bottom" id="Database Changes" order="11" sideWeight="0.49888393" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5167411" side_tool="true" visible="true" weight="0.38255033" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4955357" weight="0.3277405" />
+      <window_info anchor="bottom" id="manage.py@NewRecommand" order="14" sideWeight="0.48325893" visible="true" weight="0.38255033" />
+      <window_info anchor="bottom" id="Python Console" order="15" />
+      <window_info anchor="bottom" id="找到" order="16" weight="0.32900432" />
+      <window_info anchor="bottom" id="调试" order="17" weight="0.32931036" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32991362" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32979912" />
       <window_info anchor="right" id="数据库" order="5" visible="true" weight="0.19936034" />
     </layout>
   </component>
@@ -517,16 +757,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="修复了type与search的bug，更新了interpreter的版本" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/django_manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Article/templates/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Article/static/css/hello.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -541,20 +771,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/utils/autoreload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="224" selection-start-line="224" selection-end-line="224" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/core/management/commands/runserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/utils/autoreload.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/core/management/commands/runserver.py" />
     <entry file="file://$PROJECT_DIR$/Article/static/css/register.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -573,13 +791,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/contrib/admin/sites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/contrib/admin/sites.py" />
     <entry file="file://$PROJECT_DIR$/Article/templates/pages/logout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -632,19 +844,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/migrations/0002_auto_20180820_1430.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2754" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/__init__.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/template/defaulttags.py" />
-    <entry file="file://$PROJECT_DIR$/Article/templatetags/space2nbsp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Article/templatetags/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -670,14 +871,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="176">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
+        <state relative-caret-position="726">
           <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
         </state>
       </provider>
@@ -687,22 +888,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="1738">
           <caret line="79" column="93" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="93" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/templates/pages/type.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="132">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="e#278#347#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/templates/pages/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="352">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <element signature="e#788#857#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -716,20 +926,8 @@
     <entry file="file://$PROJECT_DIR$/Article/static/js/jquery-1.8.0.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/forms/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/utils/timezone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/forms/utils.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/utils/timezone.py" />
     <entry file="file://$PROJECT_DIR$/Article/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -743,22 +941,7 @@
           <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1534769798669" expanded="true" signature="945:1140" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Article/templates/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3294">
-          <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Article/templates/master.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -772,30 +955,55 @@
     <entry file="file://$PROJECT_DIR$/Article/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django_crontab/crontab.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django_crontab/crontab.py" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f6823a2-0587-4cea-a4ec-69a65565d42a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/hello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="22">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/templatetags/space2nbsp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/templates/master.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="346">
+          <caret line="265" column="101" selection-start-line="265" selection-start-column="101" selection-end-line="265" selection-end-column="101" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1535863311807" expanded="true" signature="1032:1033" ph="..." />
-            <marker date="1535863311807" expanded="true" signature="7509:7510" ph="..." />
-            <marker date="1535863311807" expanded="true" signature="7651:7652" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/templates/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/recommend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="185" column="4" lean-forward="true" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
+        <state relative-caret-position="132">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -804,8 +1012,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NewRecommand/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="140" column="1" lean-forward="true" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
+        <state relative-caret-position="368">
+          <caret line="139" column="47" selection-start-line="139" selection-start-column="47" selection-end-line="139" selection-end-column="47" />
         </state>
       </provider>
     </entry>

@@ -137,5 +137,5 @@ STATICFILES_DIRS = (
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
 
 CRONJOBS = [
-    ('*/1 * * * *', 'Article.recommend.recommend'),
+    ('* 3 * * *', 'Article.recommend.recommend'),
 ]
