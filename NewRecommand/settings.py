@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Article',
+    'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,11 @@ STATICFILES_DIRS = (
     ('fonts', os.path.join(STATIC_ROOT, 'fonts').replace('\\', '/')),
     ('js', os.path.join(STATIC_ROOT, 'js').replace('\\', '/')),
 )
+
+
+# 解决crontab中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+CRONJOBS = [
+    ('*/1 * * * *', 'Article.recommend.recommend'),
+]
