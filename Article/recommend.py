@@ -60,6 +60,8 @@ def user_recommend(request):
     for i in range(5000):
         _, movie_summary = sess.run([train, summaryMarged])
         writer.add_summary(movie_summary, i)
+    saver = tf.train.Saver(max_to_keep=1)
+    saver.save(sess, '/home/max/PycharmProjects/NewsRecommand/D:/ckpt/mnist.ckpt')
     c_x_p, c_t_p = sess.run([x_p, theta_p])
     predicts = np.dot(c_x_p, c_t_p.T) + rating_mean
     errors = np.sqrt(np.sum((predicts - rating) ** 2))
