@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5x8kzng%p9qiexc&254cpco5%#tgfx8mb#ccvb$dmx%btz3vc0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True;
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['47.95.196.246', 'myisking.net']
 
 
 # Application definition
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Article',
-    'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -124,18 +123,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static').replace('\\', '/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'Aritcle/static/').replace('\\', '/')
 STATICFILES_DIRS = (
     ('css', os.path.join(STATIC_ROOT, 'css').replace('\\', '/')),
-    ('images', os.path.join(STATIC_ROOT, 'images').replace('\\', '/')),
-    ('fonts', os.path.join(STATIC_ROOT, 'fonts').replace('\\', '/')),
+    ('image', os.path.join(STATIC_ROOT, 'image').replace('\\', '/')),
     ('js', os.path.join(STATIC_ROOT, 'js').replace('\\', '/')),
 )
 
 
 # 解决crontab中文问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
-
-CRONJOBS = [
-    ('*/1 * * * *', 'Article.recommend.recommend'),
-]

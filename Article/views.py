@@ -69,12 +69,11 @@ def user_recommend(request):
     init = tf.global_variables_initializer()
     sess.run(init)
     saver = tf.train.Saver(max_to_keep=1)
-    saver.restore(sess, '/home/max/PycharmProjects/NewsRecommand/D:/ckpt/mnist.ckpt')
     c_x_p, c_t_p = sess.run([x_p, theta_p])
     predicts = np.dot(c_x_p, c_t_p.T) + rating_mean
     errors = np.sqrt(np.sum((predicts - rating) ** 2))
     pages_df = pd.read_sql_query("select * from Article_article;", conn)
-    user_id = request.user.user_id
+    user_id = request.user_id
     sortedResult = predicts[:, int(user_id)].argsort()[::-1]
     predicts = np.transpose(predicts)
     # 推荐完毕
@@ -187,13 +186,15 @@ def fix_recommend(request):
             j += 1
         if j == 4 - type_num:
             break
-    return Recommend
+    j = 0
+    recommend_id2 = []
+    for i in Recommend:
+        if (not models.article.objects.get(article_id=int(i.article_id))):
+            print("推荐出错了")
+        recommend_id2.append(i.article_id)
+        j += 1
 
-
-def recommend(request):
-    temp = fix_recommend(request.user)
-    request.user.recommend = num2info(temp)
-    request.user.save()
+    return recommend_id2
 
 
 def add_info(request, infos, data):
@@ -288,7 +289,7 @@ def search(request):
 
 
 def homepage(request):
-    response = render(request, basepath + "pages/hello.html")
+    response = index(request)
     return response
 
 
@@ -392,7 +393,14 @@ def type(request, t):
     return render(request, 'pages/type.html', {"type": t, "SearchResult": article, "ResultAmount": ResultAmount})
 
 
+def recommend1(request):
+    temp = fix_recommend(request.user)
+    request.user.recommend = num2info(temp)
+    request.user.save()
+
+
 def index(request):
+
     Viewed = []
     Recommend = []
     Result1 = []
@@ -424,6 +432,8 @@ def index(request):
     if not request.user.is_authenticated:
         return render(request, 'pages/index.html',
                       {"type1": Result1, "type2": Result2, "type3": Result3, "type4": Result4, "type5": Result5})
+
+    recommend1(request)    
     # 浏览记录
     viewed = request.user.viewed
     if request.user.viewed:

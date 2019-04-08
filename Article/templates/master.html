@@ -23,7 +23,7 @@
         if(element.value==elementvalue)
         {
             element.value="";
-            element.style.color="#555";
+            element.style.color="#000";
         }
     }
     //离开输入框触发事件
@@ -32,7 +32,7 @@
         if(element.value==""||element.value.replace(/\s/g,"")=="")
         {
             element.value=elementvalue;
-            element.style.color="#c8c8c8";
+            element.style.color="#000";
         }
     }
     </script>
@@ -78,6 +78,11 @@
     <!-- 导航结束 -->
             {% block content %}
             {% endblock %}
-        <div class="footer">版权所有© 如果有的话</div>
+        <div class="footer">Copyright © 2018 NEFU-SE All Rights Reserved
+<br>
+地址：哈尔滨市香坊区和兴路26号 150040
+<br>
+Author：郭鹏鑫 吴鹏 段仁翀 方静 毕曦文
+</div>
 </body>
 </html>
