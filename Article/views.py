@@ -74,7 +74,8 @@ def user_recommend(request):
     errors = np.sqrt(np.sum((predicts - rating) ** 2))
     pages_df = pd.read_sql_query("select * from Article_article;", conn)
     user_id = request.user_id
-    sortedResult = predicts[:, int(user_id)].argsort()[::-1]
+    print(predicts)
+    sortedResult = predicts[int(user_id), :].argsort()[::-1]
     predicts = np.transpose(predicts)
     # 推荐完毕
     return sortedResult

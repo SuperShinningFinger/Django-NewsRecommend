@@ -16,10 +16,6 @@
             <div class="s_tt">{{ news.title }}</div>
             <div class="s_xx">时间：{{ news.date }}&nbsp;&nbsp;作者：{{ news.author }}浏览：{{ news.click }}  </div>
             <div class="s_nr"> {{ news.text|entertobr|spacetonbsp }}</div>
-            <div class="label">
-                <span style="font-style:oblique">标签：</span><span
-                    style="font-size: small;font-style: italic;le: italic;">{{ news.type }}</span>
-            </div>
             {% if not selected == -1 %}
                 <div class="nypaihang f14" style="text-align: center">
                     <h3 class="tjhc_t"><strong class="f18 hei">你喜欢本条新闻吗？</strong></h3>
