@@ -37,6 +37,12 @@ termcolor==1.1.0
 Werkzeug==0.14.1
 ```
 
+#### 生成依赖包文件方法
+
+```python
+pip freeze > requirements.txt
+```
+
 #### 安装依赖方法
 
 在项目根目录打开Python终端，运行
@@ -53,4 +59,5 @@ pip install -r requirements.txt
 
    ```python
    python3 manage.py runserver 0.0.0.0:8005
+   nohup python -u manage.py runserver 0.0.0.0:8005 > out.log 2>&1 &    # 后台运行
    ```
