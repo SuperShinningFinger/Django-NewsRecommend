@@ -4,6 +4,13 @@
 	<link rel="stylesheet" href="{% static 'css/login.css'%}" />
      <script type="text/javascript" src="{% static 'js/tbdValidate.js' %}"></script>
 
+<script type="text/javascript">
+    //直接弹出，无取消按钮
+    if ({{ errors|safe }} != "" )
+    {
+        alert({{ errors|safe }});
+    }
+</script>
 
     <div class="content">
         <div class="login-box">

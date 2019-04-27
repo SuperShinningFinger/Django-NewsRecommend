@@ -3,16 +3,13 @@
 {% block content %}
     <link rel="stylesheet" href="{% static 'css/register.css' %}"/>
 
-    {% if errors %}
-        <li>
-
-            {% for error in errors %}
-             <p style="color: red;">
-                {{error}}
-             </p>
-              {% endfor %}
-        </li>
-    {% endif %}
+<script type="text/javascript">
+    //直接弹出，无取消按钮
+    if ({{ errors|safe }} != "" )
+    {
+        alert({{ errors|safe }});
+    }
+</script>
     <form action="{% url 'newsrecommand:register'%}" method="post">
         <p style="font-size:24px;text-align:center;">用户注册</p><br/>
         <div class="register-box">

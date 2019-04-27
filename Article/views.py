@@ -13,6 +13,7 @@ from django.http import HttpResponseRedirect
 from django.contrib import auth
 from .models import User as User
 from django.shortcuts import HttpResponse
+import json
 
 basepath = os.getcwd() + '/Article/templates/'
 
@@ -302,12 +303,16 @@ def register(request):
     password = None
     password2 = None
     CompareFlag = False
-
+    ExistFlag = True
     if request.method == 'POST':
         if not request.POST.get('account'):
             errors.append('用户名不能为空')
         else:
             account = request.POST.get('account')
+
+        if User.objects.filter(username=account):
+            errors.append('用户名已存在')
+            ExistFlag = False
 
         if not request.POST.get('password'):
             errors.append('密码不能为空')
@@ -324,7 +329,7 @@ def register(request):
             else:
                 errors.append('两次输入密码不一致')
 
-        if account is not None and password is not None and password2 is not None and CompareFlag:
+        if account is not None and ExistFlag and password is not None and password2 is not None and CompareFlag:
             User.objects.create_user(username=account, password=password)
             userlogin = auth.authenticate(username=account, password=password)
             auth.login(request, userlogin)
@@ -333,8 +338,11 @@ def register(request):
             request.user.sex = request.POST.get('sex-radio')
             request.user.save()
             return HttpResponseRedirect('/pages/index/')
-
-    return render(request, 'pages/register.html', {'errors': errors})
+    total_error = ""
+    for error in errors:
+        total_error += error
+        total_error += '\n'
+    return render(request, 'pages/register.html', {'errors': json.dumps(total_error)})
 
 
 # 用户登录
@@ -364,7 +372,11 @@ def login(request):
                     errors.append('用户名错误')
             else:
                 errors.append('用户名或密码错误')
-    return render(request, 'pages/login.html', {'errors': errors})
+    total_error = ""
+    for error in errors:
+        total_error += error
+        total_error += '\n'
+    return render(request, 'pages/login.html', {'errors': json.dumps(total_error)})
 
 
 # 用户退出

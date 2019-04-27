@@ -25,7 +25,7 @@ SECRET_KEY = '5x8kzng%p9qiexc&254cpco5%#tgfx8mb#ccvb$dmx%btz3vc0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True;
 
-ALLOWED_HOSTS = ['localhost', '47.95.196.246', 'myisking.net']
+ALLOWED_HOSTS = ['127.0.0.1', '47.95.196.246', 'myisking.net']
 
 
 # Application definition
