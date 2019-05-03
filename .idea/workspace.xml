@@ -2,205 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="150ea886-6667-40ba-b747-7d452fe64859" name="默认的" comment="优化了协同过滤的更新效率，新用户的推荐问题与Linux版本的星级评分素材尚未解决">
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/autocomplete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/changelists.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/responsive_rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/vendor/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/css/widgets.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/fonts/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/fonts/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/fonts/Roboto-Bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/fonts/Roboto-Light-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/fonts/Roboto-Regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/calendar-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/gis/move_vertex_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/gis/move_vertex_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-addlink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-alert.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-changelink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-deletelink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-no.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-unknown-alt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-unknown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-viewlink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/icon-yes.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/inline-delete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/selector-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/sorting-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/tooltag-add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/img/tooltag-arrowright.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/SelectBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/SelectFilter2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/actions.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/autocomplete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/cancel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/change_form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/collapse.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/inlines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/inlines.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/jquery.init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/popup_response.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/prepopulate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/prepopulate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/prepopulate_init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/timeparse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/urlify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/image/stark2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/static/image/stars2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/templates/master_old.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article/views_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/NewRecommand.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NewRecommand.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/recommend.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/recommend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/hello.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/hello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/news.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/news.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/css/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/css/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/btn_search.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/btn_search.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/dot1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/dot1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/dot2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/dot2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/ico_search.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/ico_search.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/icon1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/icon1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/menu_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/menu_bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/news-img01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/news-img01.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/p2bg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/p2bg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/sprites1008.png" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/sprites1008.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/top_shu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/top_shu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/tt1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/tt1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/tt2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/tt2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/tt3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/tt3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/tt4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/tt4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/image/未标题-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/image/未标题-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/js/changepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/js/changepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/js/jquery-1.8.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/js/jquery-1.8.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/js/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/js/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/js/startScore.js" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/js/startScore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/static/js/tbdValidate.js" beforeDir="false" afterPath="$PROJECT_DIR$/Article/static/js/tbdValidate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/master.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templates/pages/type.html" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templates/pages/type.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templatetags/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/templatetags/space2nbsp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/templatetags/space2nbsp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Article/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewRecommand/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewRecommand/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewRecommand/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewRecommand/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewRecommand/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewRecommand/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewRecommand/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewRecommand/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/haha4000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/news.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +33,26 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="news [2]" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news.sqlite" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="news.sqlite" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -413,35 +240,91 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-2009208988">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="3" />
+          <entry key="html" value="104" />
+          <entry key="py" value="430" />
+          <entry key="txt" value="72" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="104" />
+          <entry key="PLAIN_TEXT" value="72" />
+          <entry key="Python" value="430" />
+          <entry key="Scratch" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="article_user" value="1" />
+          <entry key="html" value="2" />
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="1" />
+          <entry key="HTML" value="2" />
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="NewRecommand" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Article/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Article/templates/master.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Article/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4730">
-              <caret line="229" column="32" selection-start-line="229" selection-start-column="32" selection-end-line="229" selection-end-column="32" />
+            <state relative-caret-position="129">
+              <caret line="268" column="30" lean-forward="true" selection-start-line="268" selection-start-column="30" selection-end-line="268" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://1b1d4730-e34c-4278-bdec-dfd3f5fc57ab/schema/main/table/article_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Article/views_old.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -449,8 +332,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Article/templates/pages/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="324">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -458,17 +341,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NewRecommand/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="540">
               <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NewRecommand/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+            <state relative-caret-position="810">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -481,7 +364,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Article/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="216">
               <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
             </state>
           </provider>
@@ -506,12 +389,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>url</find>
-      <find>left</find>
-      <find>p{</find>
-      <find>left_1</find>
-      <find>s_nr</find>
-      <find>request.user</find>
       <find>request.</find>
       <find>auth</find>
       <find>input</find>
@@ -536,6 +413,12 @@
       <find>Django</find>
       <find>OnfocusFun</find>
       <find>spacetonbsp</find>
+      <find>HOST</find>
+      <find>log</find>
+      <find>regi</find>
+      <find>err</find>
+      <find>login</find>
+      <find>detail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -562,10 +445,8 @@
         <option value="$PROJECT_DIR$/Article/templates/pages/hello.html" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/Article/templates/pages/logout.html" />
-        <option value="$PROJECT_DIR$/Article/templates/pages/login.html" />
         <option value="$PROJECT_DIR$/Article/static/css/base.css" />
         <option value="$PROJECT_DIR$/Article/templatetags/judge_selected.py" />
-        <option value="$PROJECT_DIR$/Article/templates/pages/register.html" />
         <option value="$PROJECT_DIR$/Article/static/css/news.css" />
         <option value="$PROJECT_DIR$/Article/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/Article/models.py" />
@@ -578,11 +459,13 @@
         <option value="$PROJECT_DIR$/Article/templatetags/recommend.py" />
         <option value="$PROJECT_DIR$/Article/templates/pages/index.html" />
         <option value="$PROJECT_DIR$/Article/recommend.py" />
-        <option value="$PROJECT_DIR$/Article/views.py" />
         <option value="$PROJECT_DIR$/Article/static/css/index.css" />
-        <option value="$PROJECT_DIR$/NewRecommand/settings.py" />
         <option value="$PROJECT_DIR$/Article/admin.py" />
         <option value="$PROJECT_DIR$/Article/templates/master.html" />
+        <option value="$PROJECT_DIR$/NewRecommand/settings.py" />
+        <option value="$PROJECT_DIR$/Article/templates/pages/register.html" />
+        <option value="$PROJECT_DIR$/Article/templates/pages/login.html" />
+        <option value="$PROJECT_DIR$/Article/views.py" />
       </list>
     </option>
   </component>
@@ -592,11 +475,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="318" />
-    <option name="y" value="26" />
-    <option name="width" value="1392" />
-    <option name="height" value="801" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="750" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -604,21 +486,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="NewsRecommend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NewsRecommend" type="462c0819:PsiDirectoryNode" />
+              <item name="NewsRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsRecommand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewsRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsRecommand" type="462c0819:PsiDirectoryNode" />
+              <item name="Article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewsRecommand" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewsRecommand" type="462c0819:PsiDirectoryNode" />
+              <item name="NewRecommand" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Max/PycharmProjects/NewRecommand/Article/templates/pages/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -630,17 +523,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article\templatetags" />
+      <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article\templates" />
+      <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Article" />
       <recent name="$PROJECT_DIR$/Article/templatetags" />
       <recent name="D:\document\大创\NewRecommand\Article" />
       <recent name="D:\document\大创\NewRecommand\NewRecommand\cron" />
       <recent name="D:\document\大创\NewRecommand\NewRecommand" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article\templatetags" />
-      <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article\templates" />
-      <recent name="C:\Users\Max\PycharmProjects\NewRecommand\Article" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -819,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536409917218</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修复了用户名重复报错的bug；添加了警告框，优化了界面显示；添加了本地ALLOWED_HOSTS，能在本地IDE上直接运行，无需修改">
+      <created>1556356428146</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556356428146</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -832,15 +732,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1920" height="1054" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49423078" visible="true" weight="0.19330454" />
-      <window_info id="Structure" order="1" sideWeight="0.50576925" side_tool="true" weight="0.2575594" />
-      <window_info id="Favorites" order="2" sideWeight="0.5017422" side_tool="true" weight="0.24460043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49238577" visible="true" weight="0.2176026" />
+      <window_info id="Structure" order="1" sideWeight="0.5076142" side_tool="true" weight="0.19654427" />
+      <window_info id="Favorites" order="2" sideWeight="0.5076142" side_tool="true" weight="0.19654427" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.4955357" weight="0.32997763" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4994612" weight="0.32896176" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.46274298" weight="0.32175925" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49892008" weight="0.3283582" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.70410365" visible="true" weight="0.32146958" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -849,7 +750,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49832588" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="11" sideWeight="0.49888393" weight="0.32885906" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.537257" side_tool="true" visible="true" weight="0.22916667" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.29589632" side_tool="true" visible="true" weight="0.32146958" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49460045" weight="0.3275463" />
       <window_info active="true" anchor="bottom" id="manage.py@NewRecommand" order="14" sideWeight="0.48156425" visible="true" weight="0.37278762" />
       <window_info anchor="bottom" id="Python Console" order="15" />
@@ -859,7 +760,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32979912" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32937366" />
       <window_info anchor="right" id="数据库" order="5" visible="true" weight="0.19936034" />
     </layout>
   </component>
@@ -891,11 +792,10 @@
     <MESSAGE value="修复了type与search的bug，更新了interpreter的版本" />
     <MESSAGE value="用crontab实现了自动更新推荐新闻" />
     <MESSAGE value="优化了协同过滤的更新效率，新用户的推荐问题与Linux版本的星级评分素材尚未解决" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化了协同过滤的更新效率，新用户的推荐问题与Linux版本的星级评分素材尚未解决" />
+    <MESSAGE value="修复了用户名重复报错的bug；添加了警告框，优化了界面显示；添加了本地ALLOWED_HOSTS，能在本地IDE上直接运行，无需修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了用户名重复报错的bug；添加了警告框，优化了界面显示；添加了本地ALLOWED_HOSTS，能在本地IDE上直接运行，无需修改" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Article/migrations/0002_auto_20180803_2303.py" />
-    <entry file="file://$PROJECT_DIR$/Article/migrations/0002_auto_20180803_2354.py" />
     <entry file="file://$PROJECT_DIR$/Article/static/css/search.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -961,13 +861,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/forms/utils.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/utils/timezone.py" />
-    <entry file="file://$PROJECT_DIR$/Article/templates/pages/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django_crontab/crontab.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0f6823a2-0587-4cea-a4ec-69a65565d42a/console.sql" />
     <entry file="file://$PROJECT_DIR$/Article/hello.py" />
@@ -975,13 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1738">
-          <caret line="79" column="93" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -1024,13 +910,6 @@
     <entry file="file://$PROJECT_DIR$/Article/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Article/recommend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4026">
-          <caret line="187" column="31" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Article/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1065,38 +944,85 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/django/template/base.py" />
+    <entry file="file://$PROJECT_DIR$/Article/templates/master.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Article/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="135">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Article/templates/master.html">
+    <entry file="file://$PROJECT_DIR$/Article/recommend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="4941">
+          <caret line="187" column="31" selection-start-line="187" selection-start-column="31" selection-end-line="187" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/templates/pages/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" selection-start-line="4" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4730">
-          <caret line="229" column="32" selection-start-line="229" selection-start-column="32" selection-end-line="229" selection-end-column="32" />
+        <state relative-caret-position="129">
+          <caret line="268" column="30" lean-forward="true" selection-start-line="268" selection-start-column="30" selection-end-line="268" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://1b1d4730-e34c-4278-bdec-dfd3f5fc57ab/schema/main/table/article_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/templates/pages/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Article/views_old.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/templates/pages/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="324">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NewRecommand/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="540">
           <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewRecommand/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1105,20 +1031,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="216">
           <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Article/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewRecommand/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="71" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-        </state>
-      </provider>
     </entry>
   </component>
 </project>

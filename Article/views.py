@@ -208,7 +208,7 @@ def add_info(request, infos, data):
             article_list_id.remove(str(infos.article_id))
             article_list_id.insert(0, str(infos.article_id))
         data = ",".join(article_list_id)
-        print(data)
+        # print(data)
     else:
         data = str(infos.article_id)
     return data
@@ -230,8 +230,11 @@ def detail(request, id):
     request.user.viewed = add_info(request, infos, viewed)
     request.user.save()
     scored = request.user.scored
+    # print("score = " + str(request.POST.get('score')))
     if request.POST.get('score'):
+        # print("score = " + str(request.POST.get('score')))
         request.user.scored = add_info(request, infos, scored)
+        # print("scored = " + scored)
         score = models.Score.objects.create(user=request.user, article=infos, score=float(request.POST.get('score')))
         score.save()
         request.user.save()
@@ -264,11 +267,11 @@ def search(request):
     allArticle = models.article.objects.all().order_by("-date")
     SearchResult = []
     for article in allArticle:
-        if keyword in article.title:
+        if article.title and keyword in article.title:
             SearchResult.append(article)
-        elif keyword in article.text:
+        elif article.text and keyword in article.text:
             SearchResult.append(article)
-        elif keyword in article.author:
+        elif article.author and keyword in article.author:
             SearchResult.append(article)
     #  elif keyword in article.type:
     #   SearchResult.append(article)
