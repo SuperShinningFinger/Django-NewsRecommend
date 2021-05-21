@@ -12,6 +12,6 @@ python-dateutil==2.7.3
 pytz==2018.5
 six==1.11.0
 tensorboard==1.10.0
-tensorflow==1.10.0
+tensorflow==2.5.0
 termcolor==1.1.0
 Werkzeug==0.14.1
