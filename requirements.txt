@@ -7,7 +7,7 @@ grpcio==1.14.1
 Markdown==2.6.11
 numpy==1.15.1
 pandas==0.23.4
-protobuf==3.6.1
+protobuf==3.15.0
 python-dateutil==2.7.3
 pytz==2018.5
 six==1.11.0
